@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2854376c01ee640b0a180e9fc98802, type: 3}
+  m_Name: ClassDatabase
+  m_EditorClassIdentifier: 
+  classes:
+  - id: bandit
+    displayName: Bandit
+    abilitiesByLevel:
+    - id: bandit_lvl1_agility_edge
+      displayName: Bandit edge
+      description: +1 dmg if AGI > enemy's AGI
+    - id: bandit_lvl2_agility_extra
+      displayName: Extra agility
+      description: AGI +1
+    - id: bandit_lvl3_poison
+      displayName: Poison
+      description: Deals extra +1 damage on 2nd turn, +2 on 3rd turn and so on.
+  - id: warrior
+    displayName: Warrior
+    abilitiesByLevel:
+    - id: warrior_lvl1_open_strike
+      displayName: Open strike
+      description: Double damage on the first turn.
+    - id: warrior_lvl2_shield
+      displayName: Shield
+      description: -3 on incoming damage if STR > enemy's STR
+    - id: warrior_lvl3_extra_str
+      displayName: Extra strength
+      description: STR +1
+  - id: barbarian
+    displayName: Barbarian
+    abilitiesByLevel:
+    - id: barbarian_lvl1_rage_flow
+      displayName: Rage flow
+      description: +2 damage the first 3 turns, after -1 damage
+    - id: barbarian_lvl2_stone_skin
+      displayName: Stone skin
+      description: Incoming damage reduces by the value of ENDUR
+    - id: barbarian_lvl3_extra_endur
+      displayName: Extra endurance
+      description: ENDUR +1
+  weapons:
+  - id: dagger
+    displayName: Dagger
+    baseDamage: 2
+    damageType: 2
+  - id: sword
+    displayName: Sword
+    baseDamage: 3
+    damageType: 0
+  - id: club
+    displayName: Club
+    baseDamage: 4
+    damageType: 1
+  - id: axe
+    displayName: Axe
+    baseDamage: 4
+    damageType: 0
+  - id: spear
+    displayName: Spear
+    baseDamage: 5
+    damageType: 2
+  - id: legendary_sword
+    displayName: Legendary Sword
+    baseDamage: 10
+    damageType: 0
+  - id: goblin_weapon
+    displayName: Goblin slash
+    baseDamage: 2
+    damageType: 0
+  - id: skeleton_weapon
+    displayName: Skeleton punch
+    baseDamage: 2
+    damageType: 1
+  - id: slime_weapon
+    displayName: Slime
+    baseDamage: 1
+    damageType: 0
+  - id: ghost_weapon
+    displayName: Ghost hug
+    baseDamage: 3
+    damageType: 2
+  - id: golem_weapon
+    displayName: Golem punch
+    baseDamage: 1
+    damageType: 1
+  - id: dragon_weapon
+    displayName: Fire stream
+    baseDamage: 4
+    damageType: 0
